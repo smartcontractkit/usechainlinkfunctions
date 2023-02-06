@@ -1,7 +1,7 @@
 ---
 title: 'LINK non-circulating supply Proof of Reserves'
 summary: 'This Function pulls all the reported Chainlink Foundation Non-Circulating Supply Wallets (provided by Chainlink Labs API). The API provides a list of wallets and reported reserves for each. Each time this application is invoked, we randomly select 1 wallet from the list. We then verify that the funds on-chain match the off-chain reported amount by Chainlink Foundation. We expect each time we run this check that the funds on-chain should match the API off-chain amount. More info on LINK circulation: https://supply.chain.link'
-date: '2023-03-02'
+date: '2023-02-28'
 author:
   name: BJ
   link: https://twitter.com/bryanjowers
