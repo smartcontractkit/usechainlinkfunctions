@@ -1,6 +1,11 @@
 ======= Instructions =======
 
 The site uses [Gray Matter](https://github.com/jonschlinkert/gray-matter) for simple post markdown. Your PR must comly to the format to be merged.
+Important: view these instructions in [RAW format](https://docs.github.com/assets/cb-17772/images/help/writing/display-markdown-as-![image](https://user-images.githubusercontent.com/553020/216872315-4c1338e7-ea8d-414c-9e33-ef93a53f85c8.png)
+source.png)
+
+
+
 
 For valid examples, look at the files in this directory: https://github.com/bryanjowers/usechainlinkfunctions/tree/main/_posts
 ======= For your PR: remove this line and everything above this line =======
