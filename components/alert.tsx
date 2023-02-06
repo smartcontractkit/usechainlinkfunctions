@@ -31,7 +31,8 @@ const Alert = ({ preview }: Props) => {
             <>
               Got a cool example to share? Add your Function code to this site.{' '}
               <a
-                href={`https://github.com/vercel/next.js/tree/canary/examples/${EXAMPLE_PATH}`}
+                href={`https://github.com/bryanjowers/usechainlinkfunctions`}
+                target="_blank"
                 className="underline hover:text-blue-600 duration-200 transition-colors"
               >
                 Submit here
