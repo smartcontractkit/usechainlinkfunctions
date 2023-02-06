@@ -3,7 +3,7 @@ import { EXAMPLE_PATH } from '../lib/constants'
 
 const About = () => {
     return (
-        <div className="mt-10 mb-10 py-10 bg-neutral-50 border border-neutral-200 ">
+        <div className="mt-10 mb-10 py-10 bg-neutral-50 border-t-2 border-b-2 border-neutral-200 ">
             <Container>
                 <div className="py-5 px-5 flex flex-col lg:flex-row items-center">
                     <div className=" lg:text-left lg:mb-0 lg:pr-4 lg:w-1/2">

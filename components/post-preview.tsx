@@ -27,7 +27,7 @@ const PostPreview = ({
   content,
 }: Props) => {
   return (
-    <div className="border-solid border-l-2  border-neutral-200 px-5">
+    <div className="border-solid border-l-2  border-black md:border-neutral-200 pl-5">
       <div >
         {/*
 
@@ -56,7 +56,7 @@ const PostPreview = ({
         
       </div>
       
-      <div className="w-4/5 py-8">{summary}</div>
+      <div className="w-full md:w-3/4 py-8 pr-2">{summary}</div>
       
       <p className="text-lg leading-relaxed mb-4">{post}</p>
       <PostBody content={content} />
