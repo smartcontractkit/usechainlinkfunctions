@@ -34,7 +34,7 @@ const Meta = () => {
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       <meta
         name="description"
-        content={`A statically generated blog example using Next.js and ${CMS_NAME}.`}
+        content={`useChainlinkFunctions() - quick and easy to understand code examples for Chainlink Functions. Powered by the Chainink community. Add your examples to this site.`}
       />
       <meta property="og:image" content={HOME_OG_IMAGE_URL} />
     </Head>
