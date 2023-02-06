@@ -27,8 +27,8 @@ const PostPreview = ({
   content,
 }: Props) => {
   return (
-    <div>
-      <div className="mb-5">
+    <div className="border-solid border-l-2  border-neutral-200 px-5">
+      <div >
         {/*
 
         <CoverImage slug={slug} title={title} src={coverImage} />
