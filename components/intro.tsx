@@ -8,7 +8,7 @@ const Intro = () => {
     <section className="flex-col md:flex-col flex items-center md:justify-between mt-16 mb-16 md:mb-12">
       <Link href="/" className="hover:none">
 
-        <h1 className="whitespace-nowrap xl:text-8xl lg:text-7xl md:text-6xl sm:text-5xl text-4xl font-bold tracking-tighter leading-tight ">
+        <h1 className="whitespace-nowrap xl:text-8xl lg:text-7xl md:text-6xl sm:text-5xl text-3xl font-bold tracking-tighter leading-tight ">
           use
           <span className="text-[#375bd2]">Chainlink</span>
           Functions<span className="relative top-[-8px] xl:top-[-14px] lg:top-[-12px] md:top-[-10px] sm:top-[-10px] xl:text-8xl lg:text-7xl md:text-6xl sm:text-5xl text-4xl">(</span>
