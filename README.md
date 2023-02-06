@@ -8,6 +8,15 @@ This project is built on Vercel using NextJS.
 To run locally, `npm i`, then ``npm run dev`, then open [localhost:3000](https://localhost:3000).
 
 
+## Format for new code example posts
+1. Look at the examples for the correct format. Each post is a separate markdown file in the [_posts directory](https://github.com/bryanjowers/usechainlinkfunctions/tree/main/_posts)
+2. Add your example. You only need to commit 1 new file.
+3. Test it :) 
+4. Open a PR
+
+----
+
+
 <p align="center">
   <a href="./LICENSE"><strong>Unlicense</strong></a> &mdash; public domain
 </p>
