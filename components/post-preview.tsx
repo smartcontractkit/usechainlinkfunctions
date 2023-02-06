@@ -42,7 +42,18 @@ const PostPreview = ({
         >
           {title}
         </Link>
+        
       </h3>
+      <div className="hidden md:block md:mb-12"><span>Submitted by: </span>
+        <a
+          href="{author.link}"
+          className="underline hover:text-blue-600 duration-200 transition-colors"
+        >
+          <Avatar name={author.name} />
+
+        </a>
+        
+      </div>
       
       <div>{summary}</div>
       

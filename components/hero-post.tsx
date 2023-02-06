@@ -52,7 +52,6 @@ const HeroPost = ({
           <Avatar name={author.name}  
           
           />
-          <span>tom</span>
         </a>
           
            
