@@ -35,7 +35,7 @@ const Alert = ({ preview }: Props) => {
                 target="_blank"
                 className="underline hover:text-blue-600 duration-200 transition-colors"
               >
-                Submit here
+                Submit it here
               </a>
               .
             </>
