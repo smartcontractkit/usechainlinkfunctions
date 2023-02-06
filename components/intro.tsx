@@ -33,6 +33,7 @@ const Intro = () => {
         <a
           href="https://chain.link/functions"
           className="underline hover:text-blue-600 duration-200 transition-colors"
+          target="_blank"
         >
           Chainlink Functions
         </a>
