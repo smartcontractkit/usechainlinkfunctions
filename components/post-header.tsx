@@ -15,7 +15,7 @@ const PostHeader = ({ title, coverImage, date, author }: Props) => {
   return (
     <>
       <PostTitle>{title}</PostTitle>
-      <div className="hidden md:block md:mb-12"><span className="italic text-gray-800">Submitted by: </span>
+      <div className="mb-6 md:mb-12"><span className="italic text-gray-800">Submitted by: </span>
         <a
           href={author.link}
           target="_blank"
@@ -26,16 +26,7 @@ const PostHeader = ({ title, coverImage, date, author }: Props) => {
         </a>
         
       </div>
-      <div className="mb-8 md:mb-16 sm:mx-0">
-        {/*  <CoverImage title={title} src={coverImage} />*/}
 
-      </div>
-      <div className="max-w-2xl mx-auto">
-        <div className="block md:hidden mb-6">
-          <Avatar name={author.name} />
-        </div>
-
-      </div>
     </>
   )
 }

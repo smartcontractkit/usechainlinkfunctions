@@ -38,13 +38,15 @@ export default function Post({ post, morePosts, preview }: Props) {
                 </title>
                 <meta property="og:image" content="/assets/blog/og.jpg" />
               </Head>
-              <PostHeader
-                title={post.title}
-                coverImage={post.coverImage}
-                date={post.date}
-                author={post.author}
-              />
-              <div className="mb-12 text-xl leading-relaxed w-4/5">{post.summary}</div>
+              <div className="px-5 md:px-0">
+                <PostHeader
+                  title={post.title}
+                  coverImage={post.coverImage}
+                  date={post.date}
+                  author={post.author}
+                />
+                <div className="mb-12 text-xl leading-relaxed md:w-4/5 md:w-full">{post.summary}</div>
+              </div>
               <PostBody content={post.content} />
             </article>
           </>
