@@ -18,7 +18,7 @@ export default function Index({ allPosts }: Props) {
     <>
       <Layout>
         <Head>
-          <title>{`Next.js Blog Example with ${CMS_NAME}`}</title>
+          <title>useChainlinkFunctions() - quick and easy to understand code examples for Chainlink Functions</title>
         </Head>
         <Container>
           
