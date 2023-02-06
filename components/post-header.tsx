@@ -17,7 +17,8 @@ const PostHeader = ({ title, coverImage, date, author }: Props) => {
       <PostTitle>{title}</PostTitle>
       <div className="hidden md:block md:mb-12"><span>Submitted by: </span>
         <a
-          href="{author.link}"
+          href={author.link}
+          target="_blank"
           className="underline hover:text-blue-600 duration-200 transition-colors"
         >
           <Avatar name={author.name} />

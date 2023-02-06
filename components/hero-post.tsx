@@ -21,7 +21,6 @@ const HeroPost = ({
   summary,
   author,
   slug,
-  content
 }: Props) => {
   return (
     <section className="hidden">

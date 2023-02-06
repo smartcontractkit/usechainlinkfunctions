@@ -1,5 +1,6 @@
 type Author = {
   name: string
+  link: string
   picture: string
 }
 
