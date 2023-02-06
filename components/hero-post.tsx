@@ -8,21 +8,23 @@ type Props = {
   title: string
   coverImage: string
   date: string
-  excerpt: string
+  summary: string
   author: Author
   slug: string
+  content: string
 }
 
 const HeroPost = ({
   title,
   coverImage,
   date,
-  excerpt,
+  summary,
   author,
   slug,
+  content
 }: Props) => {
   return (
-    <section>
+    <section className="hidden">
       <div className="mb-8 md:mb-16">
         <CoverImage title={title} src={coverImage} slug={slug} />
       </div>
@@ -42,8 +44,18 @@ const HeroPost = ({
           </div>
         </div>
         <div>
-          <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
-          <Avatar name={author.name} picture={author.picture} />
+          <p className="text-lg leading-relaxed mb-4">{summary}</p>
+          <a
+          href="{author.link}"
+          className="underline hover:text-blue-600 duration-200 transition-colors"
+        >
+          <Avatar name={author.name}  
+          
+          />
+          <span>tom</span>
+        </a>
+          
+           
         </div>
       </div>
     </section>
