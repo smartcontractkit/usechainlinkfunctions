@@ -11,7 +11,7 @@ const About = () => {
                             Get inspired from quick examples
 
                         </h3>
-                        <h3 className="text-1xl font-normal tracking-tighter leading-tighttext-center lg:text-left mb-10 lg:mb-0">Chainlink just announced Chainlink Functions, a new self-service platform that allows anyone to write serverless code to fetch any data from any API and run custom compute on Chainlink's network. Learn from other's examples or contributer your own! < br/><a
+                        <h3 className="text-1xl font-normal tracking-tighter leading-tighttext-center lg:text-left mb-10 lg:mb-0">Chainlink just announced Chainlink Functions, a new self-service platform that allows anyone to write serverless code to fetch any data from any API and run custom compute on Chainlink's network. Learn from examples created by the community or contribute your own! < br/><a
                             href="https://chain.link/functions"
                             target="_blank"
                             className="underline hover:text-blue-600 duration-200 transition-colors"
