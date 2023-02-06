@@ -44,7 +44,7 @@ export default function Post({ post, morePosts, preview }: Props) {
                 date={post.date}
                 author={post.author}
               />
-              <div className="mb-10 text-xl leading-relaxed">{post.summary}</div>
+              <div className="mb-12 text-xl leading-relaxed w-4/5">{post.summary}</div>
               <PostBody content={post.content} />
             </article>
           </>

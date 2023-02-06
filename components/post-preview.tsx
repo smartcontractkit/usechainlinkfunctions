@@ -44,7 +44,7 @@ const PostPreview = ({
         </Link>
         
       </h3>
-      <div className="hidden md:block md:mb-3"><span className="italic text-gray-400">Submitted by: </span>
+      <div className="hidden md:block"><span className="italic text-gray-400">Submitted by: </span>
         <a
           href={author.link}
           target="_blank"
@@ -56,7 +56,7 @@ const PostPreview = ({
         
       </div>
       
-      <div>{summary}</div>
+      <div className="w-4/5 py-8">{summary}</div>
       
       <p className="text-lg leading-relaxed mb-4">{post}</p>
       <PostBody content={content} />
