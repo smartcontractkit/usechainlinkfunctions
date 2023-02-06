@@ -44,7 +44,7 @@ const PostPreview = ({
         </Link>
         
       </h3>
-      <div className="hidden md:block md:mb-3"><span>Submitted by: </span>
+      <div className="hidden md:block md:mb-3"><span className="italic text-gray-400">Submitted by: </span>
         <a
           href={author.link}
           target="_blank"
@@ -60,7 +60,7 @@ const PostPreview = ({
       
       <p className="text-lg leading-relaxed mb-4">{post}</p>
       <PostBody content={content} />
-      <div className="text-md mb-4 text-slate-400 text-right">
+      <div className="text-md mb-4 text-gray-300 text-right">
         <DateFormatter dateString={date} />
       </div>
     </div>
