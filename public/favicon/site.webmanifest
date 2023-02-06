@@ -3,12 +3,12 @@
   "short_name": "Next.js",
   "icons": [
     {
-      "src": "/favicons/android-chrome-192x192.png",
+      "src": "https://assets-global.website-files.com/5f6b7190899f41fb70882d08/5fa97474da20bc75f63bfdc4_Chainlink-favicon-32.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/favicons/android-chrome-512x512.png",
+      "src": "https://assets-global.website-files.com/5f6b7190899f41fb70882d08/5fa97474da20bc75f63bfdc4_Chainlink-favicon-32.png",
       "sizes": "512x512",
       "type": "image/png"
     }
