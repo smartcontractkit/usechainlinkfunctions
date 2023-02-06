@@ -44,7 +44,7 @@ const PostPreview = ({
         </Link>
         
       </h3>
-      <div className="hidden md:block"><span className="italic text-gray-400">Submitted by: </span>
+      <div className=""><span className="italic text-gray-400">Submitted by: </span>
         <a
           href={author.link}
           target="_blank"
