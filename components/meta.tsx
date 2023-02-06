@@ -34,7 +34,7 @@ const Meta = () => {
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       <meta
         name="description"
-        content={`Powered by the Chainink community. Quick and easy to understand code examples for Chainlink Functions. Browse examples created by users.`}
+        content={`Powered by the Chainlink developer community. Quick and easy to understand code examples for Chainlink Functions. Browse or add your code to the gallery.`}
       />
       <meta property="og:image" content={HOME_OG_IMAGE_URL} />
     </Head>
