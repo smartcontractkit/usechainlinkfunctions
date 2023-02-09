@@ -4,6 +4,8 @@ This is the repository for [usechainlinkfunctions.com](https://usechainlinkfunct
 
 Want to submit your example code? YES...Open up a PR to get your idea included. 
 
+To learn more about contributing, read how to fork and clone [here](https://docs.github.com/en/get-started/quickstart/contributing-to-projects)
+
 This project is built on Vercel using NextJS.
 To run locally, `npm i`, then `npm run dev`, then open [localhost:3000](https://localhost:3000).
 
