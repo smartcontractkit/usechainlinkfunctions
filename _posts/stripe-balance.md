@@ -3,7 +3,7 @@ title: 'Fetch and return available balance of Stripe account'
 summary: 'This function will fetch Stripe account available balance of particular currency.'
 date: '2023-02-09'
 author:
-name: Karen Stepanyan
+  name: Karen Stepanyan
 link: https://snipe24.t.me/
 ---
 
