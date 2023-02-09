@@ -4,7 +4,7 @@ summary: 'This function will fetch Stripe account available balance of particula
 date: '2023-02-09'
 author:
   name: Karen Stepanyan
-link: https://snipe24.t.me/
+  link: https://snipe24.t.me/
 ---
 
 const apiKey = secrets.API_KEY
