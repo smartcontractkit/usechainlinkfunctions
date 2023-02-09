@@ -1,7 +1,7 @@
 ---
 title: 'Twitter account verification with an Ethereum address'
 summary: "Check if a Twitter account belongs to a specific Ethereum address. This example uses the Twitter API to retrieve a user's recent tweets, and checks if they tweeted a specific message containing their address. It provides the arguments and returns the result via Chainlink Functions, which allows for prior validation of the user's ownership of the address via a signature or other method, thus performing a secure and non-intrusive verification."
-date: '2023-03-02'
+date: '2023-02-06'
 author:
   name: polarzero
   link: https://twitter.com/0xpolarzero

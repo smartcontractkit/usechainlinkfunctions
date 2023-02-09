@@ -1,7 +1,7 @@
 ---
 title: 'Price data from multiple sources'
 summary: 'Retrieve the price of an asset from multiple API sources. Assets could be practially anything, incuding equities, crypto, or commodities. This example pulles from multiple different data providers (APIs) and derrives the median to return on chain via Chainlink Functions.'
-date: '2023-03-01'
+date: '2023-02-02'
 author:
   name: Morgan Kuphal
   link: https://github.com/KuphJr
