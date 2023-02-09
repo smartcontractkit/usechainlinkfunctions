@@ -60,7 +60,7 @@ const PostPreview = ({
       
       <p className="text-lg leading-relaxed mb-4">{post}</p>
       <PostBody content={content} />
-      <div className="text-md mb-4 text-gray-300 text-right">
+      <div className="text-md mb-4 text-gray-300 text-right hidden">
         <DateFormatter dateString={date} />
       </div>
     </div>
