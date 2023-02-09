@@ -3,8 +3,8 @@ title: 'Fetch and return available balance of Stripe account'
 summary: 'This function will fetch Stripe account available balance of particular currency.'
 date: '2023-02-09'
 author:
-name: Karen Stepanyan
-link: https://snipe24.t.me/
+  name: Karen Stepanyan
+  link: https://snipe24.t.me/
 ---
 
 const apiKey = secrets.API_KEY
