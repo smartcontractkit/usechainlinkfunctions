@@ -26,7 +26,7 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div className="pb-28 pt-10 w-full text-center lg:text-left px-10 lg:px-0 lg:w-1/3 tracking-tighter leading-tight text-slate-400	">Code examples on this site are contributed by the community and have not been audited. Use at your own risk. This site was an independent weekend hack project to inspire the community.</div>
+        <div className="pb-28 pt-10 w-full text-center lg:text-left px-10 lg:px-0 lg:w-1/3 tracking-tighter leading-tight text-slate-400	">Code examples on this site are contributed by the community and have not been audited. Use at your own risk. This site was an independent weekend hack project built to inspire the community.</div>
       </Container>
     </footer>
   )
