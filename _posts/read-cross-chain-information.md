@@ -77,4 +77,3 @@ console.log("WETH Supply APY on AaveV3 in Polygon: ", (supplyApyNumber / 1e25), 
 // Or return a custom Buffer for a custom byte encoding
 // return Functions.encodeUint256(Math.round(medianPrice * 100))
 return Functions.encodeUint256(supplyApyNumber)
-

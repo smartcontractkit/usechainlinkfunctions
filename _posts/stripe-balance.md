@@ -6,17 +6,16 @@ author:
   name: Karen Stepanyan
   link: https://snipe24.t.me/
 ---
-
 const apiKey = secrets.API_KEY
 const balanceCurrency = args[0] || 'usd'
 
-if (!apiKey ) {
-throw Error("Stripe API Key is required")
+if (!apiKey) {
+  throw Error("Stripe API Key is required")
 }
 
 
 const config = {
-url: `https://${apiKey}@api.stripe.com/v1/balance`,
+  url: `https://${apiKey}@api.stripe.com/v1/balance`,
 }
 
 const response = await Functions.makeHttpRequest(config)

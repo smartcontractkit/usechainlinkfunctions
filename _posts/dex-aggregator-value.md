@@ -6,7 +6,6 @@ author:
   name: Max Melcher
   link: https://twitter.com/MaxwellMelcher
 ---
-
 // Decimals can be passed from the token contract decimals() function
 const srcToken = args[0] // Token source (selling)
 const srcDecimals = args[1]

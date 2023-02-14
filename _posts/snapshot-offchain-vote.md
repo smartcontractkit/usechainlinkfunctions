@@ -6,7 +6,6 @@ author:
   name: mykcryptodev
   link: https://twitter.com/mykcryptodev
 ---
-
 const proposalId = args[0]
 
 // Use snapshot's graphql API to get the final vote outcome

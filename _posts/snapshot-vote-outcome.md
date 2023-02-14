@@ -5,9 +5,7 @@ date: '2023-02-11'
 author:
   name: ChainLinkGod
   link: https://twitter.com/ChainLinkGod
-
 ---
-
 const proposalID = args[0]
 
 if (!proposalID) {
@@ -41,10 +39,8 @@ if (totalScore < quorum) {
   return Functions.encodeString('Quorum not met')
 }
 
-
 const scores = response.data.data.proposal.scores
 const choices = response.data.data.proposal.choices
-
 const highestIndex = scores.indexOf(Math.max(...scores));
 
 return Functions.encodeString(choices[highestIndex])
