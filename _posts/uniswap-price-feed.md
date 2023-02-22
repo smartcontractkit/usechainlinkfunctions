@@ -6,7 +6,6 @@ author:
   name: moonthoon
   link: https://moonthoon.io
 ---
-
 // Max sample size is 4 due to 5 http request limit
 const SAMPLE_SIZE = 4
 // The number of decimals the price in USD is formatted to
