@@ -6,12 +6,8 @@ author:
   name: Sam Demaree
   link: https://twitter.com/samdemaree
 ---
+// This function retrieves the number of upvotes a Discord member has received in the past 24 hours using the Discord API.
 
-# Fetch Discord Upvote Data
-
-This function retrieves the number of upvotes a Discord member has received in the past 24 hours using the Discord API.
-
-```js
 const getDiscordUpvotes = async (memberId, apiKey, guildId, channelId, timeRangeMs) => {
   const endpoint = 'https://discord.com/api/v9'
   const timeRangeSec = Math.round(timeRangeMs / 1000)
