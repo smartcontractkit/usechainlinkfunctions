@@ -1,7 +1,6 @@
 ---
 title: 'Fetch Discord Upvote Data'
-summary: 'This function retrieves the number of upvotes a Discord member has received in the past 24 hours. *Note: ChatGPT was used to demonstrate that non-developers can also participate.
-'
+summary: 'This function retrieves the number of upvotes a Discord member has received in the past 24 hours. *Note: ChatGPT was used to demonstrate that non-developers can also participate.'
 date: '2023-02-22'
 author:
   name: Sam Demaree

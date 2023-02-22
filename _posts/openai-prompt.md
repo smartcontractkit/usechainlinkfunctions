@@ -6,7 +6,6 @@ author:
   name: Patrick Collins
   link: https://twitter.com/PatrickAlphaC
 ---
-
 const prompt = args[0]
 
 if (

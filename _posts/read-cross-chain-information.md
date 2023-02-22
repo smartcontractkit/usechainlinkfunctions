@@ -5,7 +5,6 @@ date: '2023-02-12'
 author:
   name: Patrick Collins
   link: https://twitter.com/PatrickAlphaC
-
 ---
 // This example shows how to make a decentralized price feed using multiple APIs
 
