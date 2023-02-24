@@ -1,6 +1,6 @@
 ---
 title: 'US election results from AP (Associated Press) API'
-summary: "This functions returns the winner of the US election for a given date. It uses the AP (Associated Press) API to get the results. The date is the only required parameter. API key is the only required secret."
+summary: "This Function returns the winner of the US election for a given date. It uses the AP (Associated Press) API to get the results. The date is the only required parameter. API key is the only required secret."
 date: '2023-02-15'
 author:
   name: Karen Stepanyan
