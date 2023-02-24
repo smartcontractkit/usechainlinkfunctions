@@ -9,21 +9,21 @@ author:
 // Chainlink Function to get election results from AP (Associated Press) API. Date and API key are the only required parameters
 
 const getReportingUnit = (reportingUnits, statePostal) => {
-const level = statePostal === 'US' ? 'national' : 'state'
-const reportingUnit = reportingUnits.find((ru) => ru.level === level)
-if (!reportingUnit) {
-throw new Error('Cannot find reporting unit')
-}
-return reportingUnit
+  const level = statePostal === 'US' ? 'national' : 'state'
+  const reportingUnit = reportingUnits.find((ru) => ru.level === level)
+  if (!reportingUnit) {
+    throw new Error('Cannot find reporting unit')
+  }
+  return reportingUnit
 }
 
 const getReportingUnitWinner = (reportingUnit) => {
-for (const candidate of reportingUnit.candidates) {
-if (candidate.winner === 'X') {
-return candidate
-}
-}
-throw new Error('Candidate not found')
+  for (const candidate of reportingUnit.candidates) {
+    if (candidate.winner === 'X') {
+      return candidate
+    }
+  }
+  throw new Error('Candidate not found')
 }
 
 
@@ -34,43 +34,43 @@ const raceType = args[3] || 'G' // The race type the election is for. The race t
 const resultsType = args[4] || 'L' // The type of results to return. `L` for live results, `T` for test results
 
 if (!secrets.apikey) {
-throw new Error('Missing AP API key')
+  throw new Error('Missing AP API key')
 }
 
 const params = {
-level:  statePostal === 'US' ? 'national' : 'state',
-raceTypeID: raceType,
-format: 'json',
-winner: 'X',
-resultsType: resultsType,
-apikey: secrets.apikey,
+  level: statePostal === 'US' ? 'national' : 'state',
+  raceTypeID: raceType,
+  format: 'json',
+  winner: 'X',
+  resultsType: resultsType,
+  apikey: secrets.apikey,
 }
 
 if ((statePostal && !raceID) || (!statePostal && raceID)) {
-throw new Error('Both statePostal and raceID are required if one is provided')
+  throw new Error('Both statePostal and raceID are required if one is provided')
 }
 
 if (statePostal) {
-params.statePostal = statePostal
+  params.statePostal = statePostal
 }
 
 if (raceID) {
-params.raceID = raceID
+  params.raceID = raceID
 }
 
 const config = {
-url: `https://api.ap.org/v3/elections/${date}`,
-params
+  url: `https://api.ap.org/v3/elections/${date}`,
+  params
 }
 
 const response = await Functions.makeHttpRequest(config)
 
 const races = response.data.races
 if (races.length === 0) {
-throw new Error('Could not find any races')
+  throw new Error('Could not find any races')
 }
 if (races.length > 1) {
-throw new Error('Finding the winner from multiple races is not supported')
+  throw new Error('Finding the winner from multiple races is not supported')
 }
 
 const race = races[0]
