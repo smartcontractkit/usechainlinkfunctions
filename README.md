@@ -1,6 +1,6 @@
 <img width="1187" alt="image" src="https://user-images.githubusercontent.com/553020/216867972-6172c451-8fdd-46b5-93be-b0c6fe6cccad.png">
 
-This is the repository for [usechainlinkfunctions.com](https://usechainlinkfunctions.com). Built as a quick weekend hack, the idea was to help showcase the awesome ideas built by the Chainlink developer community with Chainlink Functions.
+This is the repository for [useChainlinkFunctions.com](https://usechainlinkfunctions.com). Built as a quick weekend hack, the idea was to help showcase the awesome ideas built by the Chainlink developer community with Chainlink Functions.
 
 Learn more about Chainlink Functions: https://chain.link/functions
 > Chainlink Functions is a serverless developer platform that empowers you to connect Web3 smart contracts with any Web2 API (data, compute) in minutes.
