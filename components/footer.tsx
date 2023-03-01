@@ -18,7 +18,7 @@ const Footer = () => {
               Add Your Own Example
             </a>
             <a
-              href={`https://docs.chain.link`}
+              href={`https://docs.chain.link/chainlink-functions`}
               target="_blank"
               className="mx-3 font-bold hover:underline"
             >

@@ -16,7 +16,7 @@ const About = () => {
                             target="_blank"
                             className="underline hover:text-blue-600 duration-200 transition-colors"
                         >
-                            Jump to Chainlink Docs
+                            Learn more about Chainlink Functions
                         </a>
                         </h3>
 

@@ -29,13 +29,13 @@ const Alert = ({ preview }: Props) => {
             </>
           ) : (
             <>
-              Got a cool example to share? Add your Function code to this site.{' '}
+              Got a cool example to share? Get listed here!{' '}
               <a
                 href={`https://github.com/bryanjowers/usechainlinkfunctions#add-your-own-example-to-the-site`}
                 target="_blank"
                 className="underline hover:text-blue-600 duration-200 transition-colors"
               >
-                Submit it here
+                Submit it now
               </a>
               .
             </>
