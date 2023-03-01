@@ -2,6 +2,9 @@
 
 This is the repository for [usechainlinkfunctions.com](https://usechainlinkfunctions.com). Built as a quick weekend hack, the idea was to help showcase the awesome ideas built by the Chainlink developer community with Chainlink Functions.
 
+Learn more about Chainlink Functions: https://chain.link/functions
+> Chainlink Functions is a serverless developer platform that empowers you to connect Web3 smart contracts with any Web2 API (data, compute) in minutes.
+
 Want to submit your example code? YES...Open up a PR to get your idea included. 
 
 To learn more about contributing, read how to fork and clone [here](https://docs.github.com/en/get-started/quickstart/contributing-to-projects)
