@@ -1,5 +1,5 @@
 ---
-title: 'Finanical metric data for dApps and blockchains sourced from Token Terminal'
+title: 'Financial metric data for dApps and blockchains sourced from Token Terminal'
 summary: 'This Function fetches metric data from the Token Terminal API for a specific project. Supported metrics include revenue, fees, earnings, active users, TVL, volume, supply, and more. Projects includes both dApps and blockchains. Optional parameter for specific date. Requires Token Terminal Pro subscription to obtain API key.'
 date: '2023-02-11'
 author:
