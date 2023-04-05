@@ -1,6 +1,6 @@
 ---
 title: 'Get US Treasury Yield of specified maturity and interval'
-summary: 'This example shows how to return the daily, weekly, and monthly US treasury yield of a given maturity timeline'
+summary: 'This example shows how to return the daily, weekly, and monthly US treasury yield of a given maturity timeline from the Alphavantage API. Result is expected to be in percentage.'
 date: '2023-04-05'
 author:
   name: Justin Gnoh
