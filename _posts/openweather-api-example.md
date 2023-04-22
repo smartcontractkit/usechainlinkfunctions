@@ -21,7 +21,7 @@ const unit = args[2]
 
 const url = `https://api.openweathermap.org/data/2.5/weather?`
 
-console.log(`Sending HTTP request to ${url}lat=${latitude}&lon=${longitude}&appid=${secrets.apiKey}&units=${unit}`)
+console.log(`Sending HTTP request to ${url}lat=${latitude}&lon=${longitude}&units=${unit}`)
 
 const weatherRequest = Functions.makeHttpRequest({
   url: url,
