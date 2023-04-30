@@ -32,13 +32,12 @@ const geoCodingRequest = Functions.makeHttpRequest({
 
 const geoCodingResponse = await geoCodingRequest;
 
-console.log(geoCodingResponse);
-
 if (geoCodingResponse.error) {
-    console.error(weatherResponse.error)
+    console.error(geoCodingResponse.error)
     throw Error("Request failed, try checking the params provided")
 }
 
+console.log(geoCodingResponse);
 
 const latitude = geoCodingResponse.data.lat
 const longitude = geoCodingResponse.data.lon
