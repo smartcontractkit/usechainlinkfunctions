@@ -1,22 +1,47 @@
 ---
 title: 'Current Temperature results from openweather API'
-summary: "This Function returns the current temperature in an area. It uses the openweather API. Parameters include latitude, longitude of the location, along with the apiKey, and units to get the temperature in Kelvin, Celsius or Fahrenheit"
+summary: "This Function returns the current temperature in an area. It uses the openweather API. Parameters include zipcode and country code of the location, along with the apiKey in secrets, and units to get the temperature in Kelvin, Celsius or Fahrenheit"
 date: '2023-04-18'
 author:
   name: Shikhar Agarwal
   link: https://github.com/shikhar229169
 ---
 // This function fetches the latest temperature for a particular area from openweathermap API
-// latitude, longitude
+// Args include the zipcode of your location, ISO 3166 country code
 // units- unit in which we want the temperature (standard, metric, imperial)
 
 
 if (!secrets.apiKey) {
-  throw Error("Weather API Key is not available!");
+  throw Error("Weather API Key is not available!")
 }
 
-const latitude = args[0]
-const longitude = args[1]
+const zipCode = `${args[0]},${args[1]}`
+
+const geoCodingURL = "http://api.openweathermap.org/geo/1.0/zip?"
+
+console.log(`Sending HTTP request to ${geoCodingURL}zip=${zipCode}`)
+
+const geoCodingRequest = Functions.makeHttpRequest({
+    url: geoCodingURL,
+    method: "GET",
+    params: {
+        zip: zipCode,
+        appid: secrets.apiKey
+    }
+})
+
+const geoCodingResponse = await geoCodingRequest;
+
+console.log(geoCodingResponse);
+
+if (geoCodingResponse.error) {
+    console.error(weatherResponse.error)
+    throw Error("Request failed, try checking the params provided")
+}
+
+
+const latitude = geoCodingResponse.data.lat
+const longitude = geoCodingResponse.data.lon
 const unit = args[2]
 
 const url = `https://api.openweathermap.org/data/2.5/weather?`
