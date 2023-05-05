@@ -31,7 +31,6 @@ const deployOutput =
   await $`VERCEL_ORG_ID=$NX_VERCEL_ORG_ID VERCEL_PROJECT_ID=$NX_VERCEL_PROJECT_ID vercel --scope chainlinklabs --token=$NX_VERCEL_TOKEN -m githubDeployment=1 -m githubCommitAuthorName=${authorName} -m githubCommitAuthorLogin=${authorName} -m githubCommitMessage=${commitSubject} -m githubCommitOrg=${ORGANISATION} -m githubCommitRepo=${REPOSITORY} -m githubCommitRef=${REF} -m githubCommitSha=${commitSha} -m githubOrg=${ORGANISATION} -m githubRepo=${REPOSITORY} ./`
 
 const appUrlRegex = new RegExp(`https://${appUrl}.*.vercel.app`, 'g')
-
 const deployPreviewUrl = deployOutput.stdout.match(appUrlRegex)
 
 await $`vercel alias ${deployPreviewUrl} ${alias} --token=$NX_VERCEL_TOKEN --scope=chainlinklabs`
