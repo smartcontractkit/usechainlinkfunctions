@@ -21,7 +21,6 @@ const Intro = () => {
             style={{
               display: 'inline',
               position: 'relative',
-
             }}
           />
           <span className="relative top-[-8px] xl:top-[-14px] lg:top-[-12px] md:top-[-10px] sm:top-[-10px] xl:text-8xl lg:text-7xl md:text-6xl sm:text-5xl text-4xl">)</span>
