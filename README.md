@@ -1,6 +1,6 @@
 <img width="1187" alt="image" src="https://user-images.githubusercontent.com/553020/216867972-6172c451-8fdd-46b5-93be-b0c6fe6cccad.png">
 
-DISCLAIMER: Code examples on this site are contributed by the community and have not been audited. Use at your own risk. This site was a weekend hack project built to inspire the community.
+DISCLAIMER: Code examples on this site are contributed by the community and have not been audited TEST TEST TEST. Use at your own risk. This site was a weekend hack project built to inspire the community.
 
 This is the repository for [useChainlinkFunctions.com](https://usechainlinkfunctions.com). Built as a quick weekend hack, the idea was to help showcase the awesome ideas built by the Chainlink developer community with Chainlink Functions.
 
