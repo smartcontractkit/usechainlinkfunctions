@@ -1,5 +1,5 @@
 ---
-title: 'Account $ balance'
+title: 'Zerion wallet account $USD balance'
 summary: "This function returns the USD balance of an account using the Zerion wallet tracker."
 date: '2023-05-16'
 author:
