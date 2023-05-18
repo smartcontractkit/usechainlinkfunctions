@@ -41,6 +41,11 @@ if (newsResponse.error) {
   throw Error("Request failed")
 }
 
+// if there is no news, throw an error with the message
+if (newsResponse.data.articles.length == 0) {
+  throw Error("No news!")
+}
+
 // get the latest news
 const newsSelect = newsResponse.data.articles[0]
 
