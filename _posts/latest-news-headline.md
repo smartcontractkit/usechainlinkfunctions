@@ -25,12 +25,12 @@ const newsRequest = Functions.makeHttpRequest({
   url: url,
   method: "GET",
   headers: {
-    "X-Api-Key": secrets.apiKey,
+    "X-Api-Key": secrets.apiKey
   },
   params: {
     country: country,
-    q: keywordSearch,
-  },
+    q: keywordSearch
+  }
 })
 
 // Execute the API request (Promise)
@@ -52,7 +52,7 @@ const newsSelect = newsResponse.data.articles[0]
 // choosing the required parameters to be uploaded
 const newsData = {
   publishTime: newsSelect.publishedAt,
-  title: newsSelect.title,
+  title: newsSelect.title
 }
 
 // Use JSON.stringify() to convert from JSON object to JSON string
