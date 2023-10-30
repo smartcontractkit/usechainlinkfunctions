@@ -10,6 +10,8 @@ author:
 // slugified version of the entity's name. They can be used in other functions to Arkham's API if
 // you'd like to find more information about the entity and its on-chain footprint.
 
+// An Arkham API key is required to use this function. Apply for one here: https://docs.google.com/forms/d/e/1FAIpQLSfJum3MJwq8niPhNkAlNC08wzLKWyNR18vKUN41mnOG3MQkfg/viewform?usp=sf_link
+
 const address = args[0]
 
 // Validate address input.
