@@ -6,7 +6,7 @@ author:
   name: Karen Stepanyan
   link: https://snipe24.t.me/
 ---
-// Chainlink Function to get election results from AP (Associated Press) API. Date and API key are the only required parameters
+// Chainlink Function to get election results from AP (Associated Press) API. Date and API key are the only required parameters.
 
 const getReportingUnit = (reportingUnits, statePostal) => {
   const level = statePostal === 'US' ? 'national' : 'state'
