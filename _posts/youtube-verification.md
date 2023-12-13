@@ -1,7 +1,7 @@
 ---
-title: 'Verify video or channel with an EVM wallet address'
-summary: "This function will be returned a result in uinit256. Return 1 if found the owner wallet address in video/channel description, return 0 if not found."
-date: '2023-12-13'
+title: "Video or channel verification with an EVM wallet address"
+summary: "The function returns a result as uint256: 1 if the wallet is found in the video/channel description, and 0 if not found."
+date: "2023-12-13"
 author:
   name: Viet Nguyen
   link: https://github.com/vietndt
@@ -9,10 +9,11 @@ author:
 
 // Begin Function
 // args = [videoOrChannelId, ownerWalletAddress, type]
-const videoOrChannelId = args[0]; // video or channel id get from youtube
-const ownerWalletAddress = args[1]; // owner wallet address
+const videoOrChannelId = args[0]; // video or channel id get from youtube eg. xyFa2amJJoY
+const ownerWalletAddress = args[1]; // owner wallet address eg. 0x1282401445452436b4094E86619B2Fd2fAD464d8
 const type = args[2]; // "video" | "channel"
 
+// Youtube API key get from https://console.cloud.google.com/apis/dashboard
 if (!secrets.apiKey) {
   throw Error(
     "YOUTUBE_API_KEY required"
@@ -21,7 +22,7 @@ if (!secrets.apiKey) {
 
 // Youtube API request
 const youtubeRequest = Functions.makeHttpRequest({
-  url: `https://youtube.googleapis.com/youtube/v3/${type}s``,
+  url: `https://youtube.googleapis.com/youtube/v3/${type}s`,
   method: "GET",
   params: {
     part: "snippet",
@@ -36,7 +37,7 @@ if (youtubeResponse.error) {
   throw new Error("Youtube error");
 }
 
-// Checking youtube response if `!youtubeResponse.data.items[0]` -> Youtube video or channel not found
+// Checking youtube response if !youtubeResponse.data.items[0] -> Youtube video or channel not found
 if (youtubeResponse.data && youtubeResponse.data.items && youtubeResponse.data.items[0]) {
   const description = youtubeResponse.data.items[0].snippet.description.toLowerCase();
   const walletIndex = description.indexOf(ownerWalletAddress.toLowerCase());
